@@ -8,6 +8,7 @@
     "dbaeumer.vscode-eslint",
     "Prisma.prisma",
     "alefragnani.project-manager",
-    "svelte.svelte-vscode"
+    "svelte.svelte-vscode",
+    "firsttris.vscode-jest-runner"
   ]
 }

@@ -13,3 +13,9 @@
 ## Setup Husky
 
 > ❯ pnpm add -D husky lint-staged
+
+## Setup Svelte frontend project
+
+> ❯ pnpm add -d @nrwl/express @nxext/svelte
+
+> ❯ nx generate @nxext/svelte:application diviser
