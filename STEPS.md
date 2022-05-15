@@ -23,3 +23,7 @@
 ## Setup Express API project
 
 > ❯ nx generate @nrwl/express:application vitrak --frontendProject=diviser
+
+## Setup TS Library
+
+> ❯ nx generate @nrwl/workspace:library data-access
