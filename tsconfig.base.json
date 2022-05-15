@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@teilen/api/graphql-lib": ["libs/api/graphql-lib/src/index.ts"],
       "@teilen/data-access": ["libs/data-access/src/index.ts"]
     }
   },

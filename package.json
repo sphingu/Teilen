@@ -6,7 +6,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "format": "nx format:write --all"
+    "format": "nx format:write --all",
+    "serve:both": "nx run-many --target=serve --projects=vitrak,diviser"
   },
   "private": true,
   "devDependencies": {

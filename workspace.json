@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "api-graphql-lib": "libs/api/graphql-lib",
     "data-access": "libs/data-access",
     "diviser": "apps/diviser",
     "diviser-e2e": "apps/diviser-e2e",
