@@ -24,10 +24,10 @@
 
 > ❯ nx generate @nrwl/express:application vitrak --frontendProject=diviser
 
-## Setup TS Library
-
-> ❯ nx generate @nrwl/workspace:library data-access
-
 ## Setup graphql-lib project
 
 > ❯ nx generate @nrwl/node:library graphql-lib --directory=api
+
+## Setup TS interface Library
+
+> ❯ nx generate @nrwl/workspace:library generated-types --directory=api

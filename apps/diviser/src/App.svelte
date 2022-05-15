@@ -1,8 +1,7 @@
 <script lang="ts">
-  import { API_URL } from '@teilen/data-access'
   export let message: string
 
-  fetch(API_URL)
+  fetch('./api')
     .then((res) => res.json())
     .then((data) => {
       message = data.message

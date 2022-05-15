@@ -5,17 +5,55 @@
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["libs/api/graphql-lib/**/*.ts"]
+        "lintFilePatterns": [
+          "libs/api/graphql-lib/**/*.ts"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/api/graphql-lib"],
+      "outputs": [
+        "coverage/libs/api/graphql-lib"
+      ],
       "options": {
         "jestConfig": "libs/api/graphql-lib/jest.config.ts",
         "passWithNoTests": true
+      }
+    },
+    "migrate-save": {
+      "builder": "@nrwl/workspace:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "npx prisma migrate save --experimental --schema ./src/prisma/prisma.schema",
+        "cwd": "libs/api/graphql-lib"
+      }
+    },
+    "migrate-up": {
+      "builder": "@nrwl/workspace:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "npx prisma migrate up --experimental --schema ./src/prisma/prisma.schema",
+        "cwd": "libs/api/graphql-lib"
+      }
+    },
+    "gen-client": {
+      "builder": "@nrwl/workspace:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "npx prisma generate --schema ./src/prisma/prisma.schema",
+        "cwd": "libs/api/graphql-lib"
+      }
+    },
+    "init-migration": {
+      "builder": "@nrwl/workspace:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "prisma migrate dev --name init --schema ./src/prisma/prisma.schema",
+        "cwd": "libs/api/graphql-lib"
       }
     }
   },
