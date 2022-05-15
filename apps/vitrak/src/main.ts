@@ -4,11 +4,12 @@
  */
 
 import * as express from 'express'
+import { APIResponse, API_URL } from '@teilen/data-access'
 
 const app = express()
 
-app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to vitrak!' })
+app.get(API_URL, (req, res) => {
+  res.send({ message: 'Welcome to vitrak!' } as APIResponse)
 })
 
 const port = process.env.port || 3333

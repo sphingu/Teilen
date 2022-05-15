@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@nxext/vite:build",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "frameworkConfigFile": "@nxext/svelte/plugins/vite",
         "outputPath": "dist/apps/diviser",
@@ -41,9 +43,13 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/diviser/**/*.{ts,svelte,spec.ts}"]
+        "lintFilePatterns": [
+          "apps/diviser/**/*.{ts,svelte,spec.ts}"
+        ]
       }
     },
     "check": {
@@ -57,6 +63,20 @@
       "executor": "@nxext/vitest:vitest",
       "options": {
         "command": "run"
+      }
+    },
+    "serve-with-service": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "nx serve vitrak"
+          },
+          {
+            "command": "nx serve diviser --open"
+          }
+        ],
+        "parallel": true
       }
     }
   }

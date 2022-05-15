@@ -1,3 +1,5 @@
-export function dataAccess(): string {
-  return 'data-access'
+export interface APIResponse {
+  message: string
 }
+
+export const API_URL = '/api'
