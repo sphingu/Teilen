@@ -1,7 +1,13 @@
 {
   "recommendations": [
-    
     "nrwl.angular-console",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "enkia.tokyo-night",
+    "PKief.material-icon-theme",
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "Prisma.prisma",
+    "alefragnani.project-manager",
+    "svelte.svelte-vscode"
   ]
 }
