@@ -19,3 +19,7 @@
 > ❯ pnpm add -d @nrwl/express @nxext/svelte
 
 > ❯ nx generate @nxext/svelte:application diviser
+
+## Setup Express API project
+
+> ❯ nx generate @nrwl/express:application vitrak --frontendProject=diviser

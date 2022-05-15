@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "diviser": "apps/diviser",
-    "diviser-e2e": "apps/diviser-e2e"
+    "diviser-e2e": "apps/diviser-e2e",
+    "vitrak": "apps/vitrak"
   }
 }

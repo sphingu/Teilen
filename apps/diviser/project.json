@@ -35,7 +35,8 @@
             "output": "./"
           }
         ],
-        "tsConfig": "apps/diviser/tsconfig.app.json"
+        "tsConfig": "apps/diviser/tsconfig.app.json",
+        "proxyConfig": "apps/diviser/proxy.conf.json"
       }
     },
     "lint": {

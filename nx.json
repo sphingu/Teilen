@@ -5,7 +5,7 @@
     "defaultBase": "main"
   },
   "cli": {
-    "defaultCollection": "@nrwl/workspace"
+    "defaultCollection": "@nrwl/express"
   },
   "implicitDependencies": {
     "package.json": {
@@ -29,5 +29,6 @@
         "projects": "dependencies"
       }
     ]
-  }
+  },
+  "defaultProject": "vitrak"
 }
