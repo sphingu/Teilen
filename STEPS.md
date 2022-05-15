@@ -9,3 +9,7 @@
 ✔ Main branch name                    · main
 ✔ Use Nx Cloud? (It's free and doesn't require registration.) · No
 ```
+
+## Setup Husky
+
+> ❯ pnpm add -D husky lint-staged
