@@ -44,3 +44,5 @@ Thumbs.db
 # database file
 *.sqlite
 *.sqlite-journal
+
+libs/api/generated-types/src

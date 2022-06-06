@@ -1,6 +1,6 @@
 import { Ctx, Arg, Resolver, Query, Mutation } from 'type-graphql'
 import { User } from '@teilen/api/generated-types'
-import { Context } from '../types'
+import { Context } from '../../types'
 
 @Resolver()
 export default class CustomUserResolver {

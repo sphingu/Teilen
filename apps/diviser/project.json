@@ -3,6 +3,9 @@
   "sourceRoot": "apps/diviser/src",
   "projectType": "application",
   "tags": [],
+  "implicitDependencies": [
+    "vitrak"
+  ],
   "targets": {
     "build": {
       "executor": "@nxext/vite:build",
@@ -37,8 +40,8 @@
             "output": "./"
           }
         ],
-        "tsConfig": "apps/diviser/tsconfig.app.json",
-        "proxyConfig": "apps/diviser/proxy.conf.json"
+        "configFile": "apps/diviser/vite.config.ts",
+        "tsConfig": "apps/diviser/tsconfig.app.json"
       }
     },
     "lint": {

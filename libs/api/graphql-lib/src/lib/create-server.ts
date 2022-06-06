@@ -3,7 +3,7 @@ import { ApolloServerPluginLandingPageGraphQLPlayground } from 'apollo-server-co
 import { GraphQLSchema } from 'graphql'
 
 import { getPrismaClient } from './prisma-client'
-import { Context } from './types'
+import { Context } from '../types'
 
 export const createServer = (schema: GraphQLSchema) => {
   const prisma = getPrismaClient()

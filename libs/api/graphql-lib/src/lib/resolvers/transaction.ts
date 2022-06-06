@@ -6,7 +6,7 @@ import {
   TransactionWhereUniqueInput,
   IntFieldUpdateOperationsInput,
 } from '@teilen/api/generated-types'
-import { Context } from '../types'
+import { Context } from '../../types'
 
 @ObjectType()
 class MonthlyTransaction {

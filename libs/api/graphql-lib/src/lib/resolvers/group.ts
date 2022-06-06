@@ -1,6 +1,6 @@
 import { Ctx, Resolver, Query } from 'type-graphql'
 import { Group } from '@teilen/api/generated-types'
-import { Context } from '../types'
+import { Context } from '../../types/index'
 
 @Resolver()
 export default class CustomGroupResolver {
