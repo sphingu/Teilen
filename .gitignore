@@ -46,3 +46,4 @@ Thumbs.db
 *.sqlite-journal
 
 libs/api/generated-types/src
+.routify

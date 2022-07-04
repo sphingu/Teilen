@@ -3,15 +3,11 @@
   "sourceRoot": "apps/diviser/src",
   "projectType": "application",
   "tags": [],
-  "implicitDependencies": [
-    "vitrak"
-  ],
+  "implicitDependencies": ["vitrak"],
   "targets": {
     "build": {
       "executor": "@nxext/vite:build",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "frameworkConfigFile": "@nxext/svelte/plugins/vite",
         "outputPath": "dist/apps/diviser",
@@ -46,13 +42,9 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "apps/diviser/**/*.{ts,svelte,spec.ts}"
-        ]
+        "lintFilePatterns": ["apps/diviser/**/*.{ts,svelte,spec.ts}"]
       }
     },
     "check": {
@@ -60,6 +52,12 @@
       "options": {
         "command": "svelte-check",
         "cwd": "apps/diviser"
+      }
+    },
+    "routify": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "routify --pages ./apps/diviser/src/pages --routify-dir ./apps/diviser/.routify"
       }
     },
     "test": {

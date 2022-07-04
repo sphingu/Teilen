@@ -2,6 +2,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 import 'reflect-metadata'
+import path from 'path'
 import express, { Response } from 'express'
 import cors from 'cors'
 import session from 'express-session'
@@ -41,13 +42,15 @@ async function main() {
   //     }),
   //   }),
   // )
-
+  app.use(express.static(path.join(__dirname, 'public'))); //  "public" off of current is root
   app.get('/', function (req, res) {
     res.json(req.user ? 'YES' : 'NO')
   })
   app.get('/logout', function (req, res) {
     req.session.destroy(() => {
-      req.logout()
+      req.logout((err)=>{
+        console.log('Error while logging out ', err.message)
+      })
       res.redirect(C.URLS.LOGOUT_REDIRECT)
     })
   })
